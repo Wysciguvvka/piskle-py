@@ -9,7 +9,6 @@ class UiMainWindow(QWidget):
     def __init__(self, parent: QObject = None, **kwargs) -> None:
         super(UiMainWindow, self).__init__(parent=parent, **kwargs)
         """Initialize UiMainWindow class instance"""
-
     def paintEvent(self, event: QPaintEvent) -> None:
         """Re-implement paintEvent method"""
         try:
