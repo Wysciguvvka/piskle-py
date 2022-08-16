@@ -1,8 +1,9 @@
 from PySide6.QtWidgets import QApplication, QMainWindow
 
-from src.views import UiMainWindow as UiMainWindow
+from piskle.views import UiMainWindow as UiMainWindow
 
 import signal
+import sys
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 
@@ -20,13 +21,8 @@ class UI(QMainWindow):
         self.setCentralWidget(self.ui)
 
 
-def main():
-    import sys
+if __name__ == "__main__":  # pragma: no cover
     app = QApplication(sys.argv)
     ui = UI()
     ui.show()
     sys.exit(app.exec())
-
-
-if __name__ == "__main__":
-    main()
