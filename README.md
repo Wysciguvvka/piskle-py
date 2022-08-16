@@ -1,4 +1,4 @@
-# Piskle-py automated-testing
+# Piskle-py
 
 An example project made for setting up automated tests with tox
 
