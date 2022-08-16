@@ -20,5 +20,3 @@ def test_focus(qtbot):
     qtbot.mouseClick(app.button, QtCore.Qt.LeftButton)
     qtbot.waitUntil(lambda: app.button.hasFocus())
     assert app.button.hasFocus()
-
-
